@@ -1,0 +1,9 @@
+# Ignore build directory
+build/
+
+# Ignore cache directory
+.cache/
+
+# Ignore clangd config/index directory or file
+.clangd
+
