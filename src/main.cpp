@@ -234,7 +234,7 @@ void update_vertex_buffer_square_color(sf::VertexBuffer& vertex_buffer, u16 x, u
 }
 
 void update_apple(std::array<u16, 2>& apple_position, sf::VertexBuffer& vertex_buffer, u8 tiles[HEIGHT][WIDTH]) {
-    // TODO: Ensure new apple position cannot be set to a snake tile
+    // TODO: There has to be a better way to do this
     do {
         apple_position[0] = random_int(0, WIDTH - 1);
         apple_position[1] = random_int(0, HEIGHT - 1);
